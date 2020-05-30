@@ -30,6 +30,6 @@ export default class ProfileController {
       password,
     });
 
-    return response.status(204).json(classToClass(user));
+    return response.json(classToClass(user));
   }
 }
