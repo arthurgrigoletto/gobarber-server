@@ -42,3 +42,6 @@ jobs:
         script: |
           cd ~/app/gobarber-server
           yarn
+          ./node_modules/.bin/typeorm migration:run
+          pm2 restart gobarber-api
+          
